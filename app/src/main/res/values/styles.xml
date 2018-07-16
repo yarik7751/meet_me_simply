@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -11,5 +11,44 @@
 
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="TextViewTitle">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="fontPath">fonts/Lobster-Regular.ttf</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextViewRegular" parent="TextView">
+        <item name="fontPath">fonts/Comfortaa-Regular.ttf</item>
+    </style>
+
+    <style name="TextViewBold" parent="TextView">
+        <item name="fontPath">fonts/Comfortaa-Bold.ttf</item>
+    </style>
+
+    <style name="EditTextStyle" parent="@android:style/Widget.Holo.Light.EditText">
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@drawable/edittext</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="fontPath">fonts/Comfortaa-Regular.ttf</item>
+    </style>
+
+    <style name="ButtonStyle" parent="@android:style/Widget.Holo.Light.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="fontPath">fonts/Comfortaa-Bold.ttf</item>
+    </style>
+
+    <style name="ButtonLightStyle" parent="ButtonStyle">
+        <item name="android:background">@drawable/button_light</item>
+    </style>
+
+    <style name="ButtonDarkStyle" parent="ButtonStyle">
+        <item name="android:background">@drawable/button_dark</item>
     </style>
 </resources>
