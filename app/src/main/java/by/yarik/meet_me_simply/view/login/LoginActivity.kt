@@ -6,6 +6,7 @@ import android.os.Bundle
 import by.yarik.meet_me_simply.R
 import by.yarik.meet_me_simply.view.base.BaseActivity
 import by.yarik.meet_me_simply.view.login.fragments.AuthorizationFragment
+import by.yarik.meet_me_simply.view.login.fragments.RegistrationFragment
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
 
 
@@ -17,7 +18,15 @@ class LoginActivity : BaseActivity() {
         setContentView(R.layout.activity_login)
 
         if(savedInstanceState == null) {
-            setFragment(AuthorizationFragment.getInstance()!!, R.id.flContainer, false)
+            setRegistrationFragment()
         }
+    }
+
+    private fun setAuthorizationFragment() {
+        setFragment(AuthorizationFragment.getInstance()!!, R.id.flContainer, false)
+    }
+
+    private fun setRegistrationFragment() {
+        setFragment(RegistrationFragment.getInstance()!!, R.id.flContainer, false)
     }
 }

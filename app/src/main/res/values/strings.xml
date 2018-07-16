@@ -5,4 +5,13 @@
     <string name="password">Пароль</string>
     <string name="authorization">Авторизация</string>
     <string name="registration">Регистрация</string>
+    <string name="video_description">
+        Для участия в Знакомся просто необходимо записать короткое видео длятельностью от 10 секунд до 1 минуты.
+        Данное видео будет использоваться вмессто аватарки.
+        В видео рекомендуется рассказать о своих целях в этом приложении.
+    </string>
+    <string name="geo_description">Для регистрации вам необходимо дать разрешение приложению просматривать ваше местоположение.</string>
+    <string name="male_female">Мужчина/Женщина</string>
+    <string name="male_symbol">M</string>
+    <string name="female_symbol">Ж</string>
 </resources>
