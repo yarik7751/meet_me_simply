@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import by.yarik.meet_me_simply.R
+import by.yarik.meet_me_simply.view.login.LoginActivity
+import kotlinx.android.synthetic.main.fragment_authorization.*
 import java.io.FileDescriptor
 import java.io.PrintWriter
 
@@ -28,5 +30,10 @@ class AuthorizationFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        btnRegistration.setOnClickListener {
+            //todo
+            (activity as LoginActivity).setRegistrationFragment()
+        }
     }
 }

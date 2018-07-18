@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "643045734125",
+    "firebase_url": "https://meetmesimply.firebaseio.com",
+    "project_id": "meetmesimply",
+    "storage_bucket": "meetmesimply.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643045734125:android:3b70e15bf176cc8b",
+        "android_client_info": {
+          "package_name": "by.yarik.meet_me_simply"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643045734125-7btd6hrrj49i3vnl8pdmi8ilgdaamunn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ-1P5OuRv9Noj18GInb4LB7_uMTxcwvA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

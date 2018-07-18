@@ -18,15 +18,15 @@ class LoginActivity : BaseActivity() {
         setContentView(R.layout.activity_login)
 
         if(savedInstanceState == null) {
-            setRegistrationFragment()
+            setAuthorizationFragment()
         }
     }
 
-    private fun setAuthorizationFragment() {
+    fun setAuthorizationFragment() {
         setFragment(AuthorizationFragment.getInstance()!!, R.id.flContainer, false)
     }
 
-    private fun setRegistrationFragment() {
-        setFragment(RegistrationFragment.getInstance()!!, R.id.flContainer, false)
+    fun setRegistrationFragment() {
+        setFragment(RegistrationFragment.getInstance()!!, R.id.flContainer, true)
     }
 }
