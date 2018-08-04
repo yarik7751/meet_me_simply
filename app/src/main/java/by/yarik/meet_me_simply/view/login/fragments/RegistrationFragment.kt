@@ -26,7 +26,7 @@ class RegistrationFragment : Fragment() {
 
     private val TAG = "RegFragment_log"
 
-    private val RECORD_REQUEST_CODE = 101
+    private val RECORD_REQUEST_CODE = 102
     private val VIDEO_CAPTURE = 101
 
     companion object {
@@ -47,9 +47,9 @@ class RegistrationFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        imgRecordVideo.setOnClickListener {
+        /*imgRecordVideo.setOnClickListener {
             requestCameraPermissions()
-        }
+        }*/
     }
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {

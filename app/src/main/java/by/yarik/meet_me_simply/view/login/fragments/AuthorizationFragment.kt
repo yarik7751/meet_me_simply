@@ -6,12 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import by.yarik.meet_me_simply.R
+import by.yarik.meet_me_simply.presenter.AuthorizationPresenter
+import by.yarik.meet_me_simply.relations.AuthorizationRelations
+import by.yarik.meet_me_simply.router.AuthorizationRouter
 import by.yarik.meet_me_simply.view.login.LoginActivity
 import kotlinx.android.synthetic.main.fragment_authorization.*
 import java.io.FileDescriptor
 import java.io.PrintWriter
 
-class AuthorizationFragment : Fragment() {
+class AuthorizationFragment : Fragment(), AuthorizationRelations.IView {
 
     companion object {
         var fragment: AuthorizationFragment? = null
@@ -24,6 +27,13 @@ class AuthorizationFragment : Fragment() {
         }
     }
 
+    lateinit var presenter: AuthorizationPresenter
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        presenter = AuthorizationPresenter(this)
+    }
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_authorization, container, false)
     }
@@ -32,8 +42,15 @@ class AuthorizationFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         btnRegistration.setOnClickListener {
-            //todo
-            (activity as LoginActivity).setRegistrationFragment()
+            presenter.onRegClickButton()
         }
+    }
+
+    override fun showError() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun showEmptyDataError() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }

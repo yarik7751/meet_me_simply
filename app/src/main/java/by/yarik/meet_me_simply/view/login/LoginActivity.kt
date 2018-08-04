@@ -4,6 +4,7 @@ import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import by.yarik.meet_me_simply.R
+import by.yarik.meet_me_simply.relations.AuthorizationRelations
 import by.yarik.meet_me_simply.view.base.BaseActivity
 import by.yarik.meet_me_simply.view.login.fragments.AuthorizationFragment
 import by.yarik.meet_me_simply.view.login.fragments.RegistrationFragment
