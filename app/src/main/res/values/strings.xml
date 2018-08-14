@@ -16,4 +16,9 @@
     <string name="female_symbol">Ж</string>
     <string name="record_video">Записать видео</string>
     <string name="for_what">Зачем мне нужно записывать видео?</string>
+
+    <string name="record_video_you">Записывая о себе видео, вы ...</string>
+
+
+    <string name="title_slogan_reg_rec_video">@string/record_video_you</string>
 </resources>

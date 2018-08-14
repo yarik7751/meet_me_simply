@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="info_why_record_video">
+        <item>предоставляете более убедительную информацию о себе.</item>
+        <item>доказываете, что вы не робот.</item>
+        <item>показываете своё желание к знакомству.</item>
+    </string-array>
+</resources>

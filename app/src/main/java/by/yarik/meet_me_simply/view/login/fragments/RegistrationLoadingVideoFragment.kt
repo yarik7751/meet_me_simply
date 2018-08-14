@@ -66,7 +66,7 @@ class RegistrationLoadingVideoFragment : BaseFragment(), RegistrationLoadingVide
             loadAnswerAnimations()
         }
 
-        adapter = AnswersAdapter(context!!, ArrayList());
+        adapter = AnswersAdapter(context!!);
         vpAnswers.adapter = adapter
         inkIndicator.setViewPager(vpAnswers)
     }
