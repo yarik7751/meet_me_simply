@@ -9,12 +9,13 @@ import by.yarik.meet_me_simply.R
 import by.yarik.meet_me_simply.presenter.AuthorizationPresenter
 import by.yarik.meet_me_simply.relations.AuthorizationRelations
 import by.yarik.meet_me_simply.router.AuthorizationRouter
+import by.yarik.meet_me_simply.view.base.BaseFragment
 import by.yarik.meet_me_simply.view.login.LoginActivity
 import kotlinx.android.synthetic.main.fragment_authorization.*
 import java.io.FileDescriptor
 import java.io.PrintWriter
 
-class AuthorizationFragment : Fragment(), AuthorizationRelations.IView {
+class AuthorizationFragment : BaseFragment(), AuthorizationRelations.IView {
 
     companion object {
         var fragment: AuthorizationFragment? = null

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_margin_half">16dp</dimen>
     <dimen name="aut_logo">100dp</dimen>
-    <dimen name="rec_registration_size">40dp</dimen>
+    <dimen name="rec_registration_size">100dp</dimen>
+    <dimen name="indicator_size">20dp</dimen>
 </resources>

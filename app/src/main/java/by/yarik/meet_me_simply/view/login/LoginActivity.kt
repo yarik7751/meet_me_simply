@@ -8,6 +8,7 @@ import by.yarik.meet_me_simply.relations.AuthorizationRelations
 import by.yarik.meet_me_simply.view.base.BaseActivity
 import by.yarik.meet_me_simply.view.login.fragments.AuthorizationFragment
 import by.yarik.meet_me_simply.view.login.fragments.RegistrationFragment
+import by.yarik.meet_me_simply.view.login.fragments.RegistrationLoadingVideoFragment
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
 
 
@@ -28,6 +29,6 @@ class LoginActivity : BaseActivity() {
     }
 
     fun setRegistrationFragment() {
-        setFragment(RegistrationFragment.getInstance()!!, R.id.flContainer, true)
+        setFragment(RegistrationLoadingVideoFragment.getInstance()!!, R.id.flContainer, true)
     }
 }

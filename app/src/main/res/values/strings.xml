@@ -14,4 +14,6 @@
     <string name="male_female">Мужчина/Женщина</string>
     <string name="male_symbol">M</string>
     <string name="female_symbol">Ж</string>
+    <string name="record_video">Записать видео</string>
+    <string name="for_what">Зачем мне нужно записывать видео?</string>
 </resources>
